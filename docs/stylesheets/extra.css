@@ -42,3 +42,8 @@
 .md-typeset .mermaid {
   text-align: center;
 }
+
+/* Capturas de ejemplos sueltos (Parte 3): más anchas que altas. */
+.captura.ancha {
+  max-width: 390px;
+}
