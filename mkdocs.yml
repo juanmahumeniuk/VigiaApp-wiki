@@ -4,6 +4,9 @@ site_description: >-
   y la construcción completa de la app, sin saber nada de antemano.
 site_author: Equipo VigiaApp
 copyright: Material de estudio del equipo VigiaApp
+repo_url: https://github.com/juanmahumeniuk/VigiaApp-wiki
+repo_name: VigiaApp-wiki
+edit_uri: edit/main/docs/
 
 theme:
   name: material
