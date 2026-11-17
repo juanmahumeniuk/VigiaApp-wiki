@@ -1,0 +1,159 @@
+site_name: VigiaApp desde cero
+site_description: >-
+  Wiki para rehacer VigiaApp paso a paso: Dart, Flutter, arquitectura MVVM
+  y la construcción completa de la app, sin saber nada de antemano.
+site_author: Equipo VigiaApp
+copyright: Material de estudio del equipo VigiaApp
+
+theme:
+  name: material
+  language: es
+  icon:
+    logo: material/shield-home-outline
+  favicon: assets/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Pasar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Pasar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: En esta página
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Inicio:
+      - index.md
+      - Cómo usar esta wiki: como-usar.md
+  - 1. Preparación:
+      - 1-preparacion/index.md
+      - Qué vamos a construir: 1-preparacion/1-que-vamos-a-construir.md
+      - Instalar las herramientas: 1-preparacion/2-instalacion.md
+      - Crear el proyecto: 1-preparacion/3-crear-el-proyecto.md
+      - Correr, recargar y leer errores: 1-preparacion/4-correr-y-depurar.md
+  - 2. Dart:
+      - 2-dart/index.md
+      - Variables, tipos y null safety: 2-dart/1-variables-y-tipos.md
+      - Operadores y textos: 2-dart/2-operadores-y-strings.md
+      - Funciones: 2-dart/3-funciones.md
+      - Colecciones: 2-dart/4-colecciones.md
+      - Clases: 2-dart/5-clases.md
+      - Herencia y clases abstractas: 2-dart/6-herencia-y-abstraccion.md
+      - Enums, records y patrones: 2-dart/7-enums-records-patrones.md
+      - "Asincronía I: Future": 2-dart/8-asincronia-future.md
+      - "Asincronía II: Stream y Timer": 2-dart/9-streams-y-timers.md
+      - Librerías y paquetes: 2-dart/10-librerias-y-paquetes.md
+  - 3. Flutter:
+      - 3-flutter/index.md
+      - Todo es un widget: 3-flutter/1-todo-es-un-widget.md
+      - Stateless y Stateful: 3-flutter/2-stateless-y-stateful.md
+      - Layout: 3-flutter/3-layout.md
+      - Widgets de Material: 3-flutter/4-material.md
+      - Formularios: 3-flutter/5-formularios.md
+      - Navegación: 3-flutter/6-navegacion.md
+      - Estado compartido: 3-flutter/7-estado-compartido.md
+      - Plugins y plataformas: 3-flutter/8-plugins-y-plataformas.md
+  - 4. Arquitectura:
+      - 4-arquitectura/index.md
+      - Por qué una arquitectura: 4-arquitectura/1-por-que.md
+      - MVVM y las capas: 4-arquitectura/2-mvvm-y-capas.md
+      - La dirección de las dependencias: 4-arquitectura/3-direccion-de-dependencias.md
+      - Estructura de carpetas: 4-arquitectura/4-estructura-de-carpetas.md
+      - Inyección de dependencias: 4-arquitectura/5-inyeccion-de-dependencias.md
+      - El ViewModel base: 4-arquitectura/6-viewmodel-base.md
+      - Los errores, de punta a punta: 4-arquitectura/7-errores.md
+      - Un toque, de punta a punta: 4-arquitectura/8-un-toque-de-punta-a-punta.md
+  - 5. Construcción:
+      - 5-construccion/index.md
+      - 1. Esqueleto: 5-construccion/01-esqueleto.md
+      - 2. Utilidades: 5-construccion/02-utilidades.md
+      - 3. Modelos del dominio: 5-construccion/03-dominio.md
+      - 4. El contrato de la API: 5-construccion/04-contrato-api.md
+      - 5. La sesión: 5-construccion/05-sesion.md
+      - 6. ViewModel base y Login: 5-construccion/06-login.md
+      - 7. Dependencias, rutas y enlaces: 5-construccion/07-dependencias-y-rutas.md
+      - "8. Inicio I: la actividad": 5-construccion/08-inicio.md
+      - "9. Inicio II: menú y perfil": 5-construccion/09-menu-y-perfil.md
+      - 10. Publicaciones y fotos: 5-construccion/10-publicaciones-y-fotos.md
+      - 11. Noticias: 5-construccion/11-noticias.md
+      - 12. Chat del barrio: 5-construccion/12-chat.md
+      - 13. Rondines: 5-construccion/13-rondines.md
+      - 14. SOS y alerta propia: 5-construccion/14-sos-y-alerta.md
+      - 15. Alertas de vecinos: 5-construccion/15-alertas-de-vecinos.md
+      - 16. Comité: 5-construccion/16-comite.md
+  - 6. Pruebas y entrega:
+      - 6-pruebas-y-entrega/index.md
+      - Estrategia de pruebas: 6-pruebas-y-entrega/1-estrategia.md
+      - Conectar la API real: 6-pruebas-y-entrega/2-api-real.md
+      - Tests de ViewModels: 6-pruebas-y-entrega/3-tests-de-view-models.md
+      - Tests de widgets: 6-pruebas-y-entrega/4-tests-de-widgets.md
+      - Tests de caracterización: 6-pruebas-y-entrega/5-tests-de-caracterizacion.md
+      - Tests del cliente HTTP: 6-pruebas-y-entrega/6-tests-del-cliente-http.md
+      - Compilar para Android: 6-pruebas-y-entrega/7-compilar.md
+      - Trabajo en equipo con Git: 6-pruebas-y-entrega/8-trabajo-en-equipo.md
+  - 7. Referencia:
+      - 7-referencia/index.md
+      - Glosario: 7-referencia/glosario.md
+      - Chuleta de Dart: 7-referencia/chuleta-dart.md
+      - Chuleta de widgets: 7-referencia/chuleta-widgets.md
+      - Contrato de la API: 7-referencia/contrato-api.md
+      - Errores frecuentes: 7-referencia/errores-frecuentes.md
+      - Mapa de archivos: 7-referencia/mapa-de-archivos.md
+      - Diferencias con la app real: 7-referencia/diferencias.md
+      - Ejercicios: 7-referencia/ejercicios.md
